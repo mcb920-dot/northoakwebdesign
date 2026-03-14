@@ -887,7 +887,7 @@ footer {
   <div class="contact-inner">
     <h2>Ready to grow your <em>business?</em></h2>
     <p>Fill out the form and we'll get back to you within one business day with a free consultation and honest quote — no pressure.</p>
-    <form class="contact-form" onsubmit="handleSubmit(event)">
+    <form class="contact-form" action="https://formspree.io/f/xwvrqrrz" method="POST">
       <div class="form-row">
         <div class="form-group">
           <label>YOUR NAME</label>
@@ -975,14 +975,7 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-// Form submit
-function handleSubmit(e) {
-  e.preventDefault();
-  const btn = e.target.querySelector('.form-submit');
-  btn.textContent = '✓ Request Sent! We\'ll be in touch soon.';
-  btn.style.background = '#1A7A40';
-  btn.disabled = true;
-}
+
 
 // Smooth scroll for nav links
 document.querySelectorAll('a[href^="#"]').forEach(a => {
