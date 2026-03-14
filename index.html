@@ -891,26 +891,26 @@ footer {
       <div class="form-row">
         <div class="form-group">
           <label>YOUR NAME</label>
-          <input type="text" placeholder="John Smith" required>
+          <input type="text" name="name" placeholder="John Smith" required>
         </div>
         <div class="form-group">
           <label>BUSINESS NAME</label>
-          <input type="text" placeholder="Smith Roofing LLC">
+          <input type="text" name="business" placeholder="Smith Roofing LLC">
         </div>
       </div>
       <div class="form-row">
         <div class="form-group">
           <label>PHONE NUMBER</label>
-          <input type="tel" placeholder="(479) 555-0100" required>
+          <input type="tel" name="phone" placeholder="(479) 555-0100" required>
         </div>
         <div class="form-group">
           <label>EMAIL</label>
-          <input type="email" placeholder="john@smithroofing.com">
+          <input type="email" name="email" placeholder="john@smithroofing.com">
         </div>
       </div>
       <div class="form-group">
         <label>WHAT DO YOU NEED?</label>
-        <select>
+        <select name="service">
           <option value="">Select a service...</option>
           <option>Website Design</option>
           <option>Google Business Profile</option>
@@ -923,7 +923,7 @@ footer {
       </div>
       <div class="form-group">
         <label>ANYTHING ELSE WE SHOULD KNOW?</label>
-        <textarea placeholder="Tell us about your business, your market, or what's not working right now..."></textarea>
+        <textarea name="message" placeholder="Tell us about your business, your market, or what's not working right now..."></textarea>
       </div>
       <button type="submit" class="form-submit">Send My Free Quote Request →</button>
       <p class="form-note">We respond within 1 business day. Or call/text us directly: <a href="tel:4793129603" style="color:rgba(255,255,255,0.6)">(479) 312-9603</a></p>
